@@ -24,7 +24,7 @@ You can set your own server to publish apps.
 3. Install
    ```yaml
    dependencies:
-       simple_update: ^2.0.0
+       simple_update: ^2.0.1
    ```
    
    
@@ -36,10 +36,9 @@ You can set your own server to publish apps.
    import 'package:ota_update/ota_update.dart';
    import 'package:simple_update/simple_update.dart' as simple;
    import 'package:package_info/package_info.dart';
-
-  
-    ... 
-    RaisedButton(
+   
+   code...
+   RaisedButton(
       onPressed: () async {
         var updater = new simple.SimpleUpdate(
             appId: 1,
@@ -116,8 +115,8 @@ You can set your own server to publish apps.
         }
       },
       child: Text('Update'),
-    )
-    ...
+   )
+   code...
    ```
 
 ## Build publish server

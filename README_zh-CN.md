@@ -2,7 +2,7 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
 
 # simple_update
 ![Pub Version](https://img.shields.io/pub/v/simple_update?style=flat-square)
-![Platform](https://img.shields.io/badge/platform-flutter%20android-brightgreen)
+![Platform](https://img.shields.io/badge/platform-flutter%7Cflutter%20web%7Cdart%20vm-brightgreen)
 
 APP更新的最简单方式（下载并触发安装），支持所有平台。
 
@@ -25,7 +25,7 @@ APP更新的最简单方式（下载并触发安装），支持所有平台。
 3. 安装
    ```yaml
    dependencies:
-       simple_update: ^2.0.0
+       simple_update: ^2.0.1
    ```
 
 4. 用法
@@ -36,10 +36,9 @@ APP更新的最简单方式（下载并触发安装），支持所有平台。
    import 'package:ota_update/ota_update.dart';
    import 'package:simple_update/simple_update.dart' as simple;
    import 'package:package_info/package_info.dart';
-
-  
-    ... 
-    RaisedButton(
+   
+   code...
+   RaisedButton(
       onPressed: () async {
         var updater = new simple.SimpleUpdate(
             appId: 1,
@@ -116,8 +115,8 @@ APP更新的最简单方式（下载并触发安装），支持所有平台。
         }
       },
       child: Text('Update'),
-    )
-    ...
+   )
+   code...
    ```
 
 ## 构建版本发布服务器
