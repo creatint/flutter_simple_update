@@ -24,7 +24,7 @@ You can set your own server to publish apps.
 3. Install
    ```yaml
    dependencies:
-       simple_update: ^2.0.2
+       simple_update: ^2.0.3
    ```
    
    
@@ -163,4 +163,4 @@ You can set your own server to publish apps.
 | Plugins                                                      | Status                                                       | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [simple_log](https://github.com/creatint/flutter_simple_log) | ![Pub Version](https://img.shields.io/pub/v/simple_log?style=flat-square) | The simplest way to upload logs to remote server, support all platforms |
-| [simple_update](https://github.com/creatint/flutter_simple_update) | ![Pub Version](https://img.shields.io/pub/v/simple_update?style=flat-square) | The simplest way to update your app, support android for now |
+| [simple_update](https://github.com/creatint/flutter_simple_update) | ![Pub Version](https://img.shields.io/pub/v/simple_update?style=flat-square) | The simplest way to update your app, support all platforms |

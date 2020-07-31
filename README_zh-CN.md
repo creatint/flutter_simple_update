@@ -25,7 +25,7 @@ APP更新的最简单方式（下载并触发安装），支持所有平台。
 3. 安装
    ```yaml
    dependencies:
-       simple_update: ^2.0.2
+       simple_update: ^2.0.3
    ```
 
 4. 用法
@@ -163,4 +163,4 @@ APP更新的最简单方式（下载并触发安装），支持所有平台。
 | 插件                                                     | 状态                                                       | 描述                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [simple_log](https://github.com/creatint/flutter_simple_log) | ![Pub Version](https://img.shields.io/pub/v/simple_log?style=flat-square) | 最简单的日志收集方式，支持所有平台 |
-| [simple_update](https://github.com/creatint/flutter_simple_update) | ![Pub Version](https://img.shields.io/pub/v/simple_update?style=flat-square) | 最简单的应用更新方式，暂时仅支持Android |
+| [simple_update](https://github.com/creatint/flutter_simple_update) | ![Pub Version](https://img.shields.io/pub/v/simple_update?style=flat-square) | 最简单的应用更新方式，支持所有平台 |
