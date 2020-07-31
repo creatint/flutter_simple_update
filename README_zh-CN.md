@@ -25,7 +25,7 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
 3. 安装
    ```yaml
    dependencies:
-       simple_update: ^2.0.6
+       simple_update: ^2.0.7
    ```
 
 4. 用法

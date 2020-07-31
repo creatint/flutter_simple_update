@@ -156,7 +156,7 @@ class SimpleUpdate {
   }
 
   void addDownloadCount() {
-    _client.get('$_apiPrefix/addDownloadCount?app_id=$_appId&app_key=$_appKey');
+    _client.get('$_apiPrefix/addDownloadCount?app_id=$_appId&app_key=$_appKey&version_id=${_version.id}');
   }
 }
 

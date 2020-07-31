@@ -24,7 +24,7 @@ You can set your own server to publish apps.
 3. Install
    ```yaml
    dependencies:
-       simple_update: ^2.0.6
+       simple_update: ^2.0.7
    ```
    
    
