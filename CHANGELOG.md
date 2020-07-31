@@ -1,3 +1,7 @@
+## 2.0.5
+
+* Modify the Info's API
+
 ## 2.0.4
 
 * Modify the PackageInfo's API

@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
                     info: simple.Info(
                         appName: info.appName,
                         version: info.version,
-                        buildNumber: info.buildNumber));
+                        buildNumber: int.parse(info.buildNumber)));
                 if (res == true) {
                   var re = await showDialog<bool>(
                     context: context,
@@ -77,10 +77,10 @@ class _HomeState extends State<Home> {
                           )
                               .transform(StreamTransformer<OtaEvent,
                                       simple.Event>.fromHandlers(
-                                  handleData: (data, sink) {
+                                  handleData: (event, sink) {
                             sink.add(simple.Event(
-                                status: simple.Status.values[data.status.index],
-                                value: data.value));
+                                status: simple.Status.values[event.status.index],
+                                value: event.value));
                           }));
                         });
                     if (r is Stream<simple.Event>) {

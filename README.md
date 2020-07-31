@@ -24,7 +24,7 @@ You can set your own server to publish apps.
 3. Install
    ```yaml
    dependencies:
-       simple_update: ^2.0.4
+       simple_update: ^2.0.5
    ```
    
    
@@ -49,7 +49,7 @@ You can set your own server to publish apps.
             info: simple.Info(
                 appName: info.appName,
                 version: info.version,
-                buildNumber: info.buildNumber));
+                buildNumber: int.parse(info.buildNumber)));
         if (res == true) {
           var re = await showDialog<bool>(
             context: context,
@@ -79,10 +79,10 @@ You can set your own server to publish apps.
                   )
                       .transform(StreamTransformer<OtaEvent,
                               simple.Event>.fromHandlers(
-                          handleData: (data, sink) {
+                          handleData: (event, sink) {
                     sink.add(simple.Event(
-                        status: simple.Status.values[data.status.index],
-                        value: data.value));
+                        status: simple.Status.values[event.status.index],
+                        value: event.value));
                   }));
                 });
             if (r is Stream<simple.Event>) {

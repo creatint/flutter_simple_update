@@ -119,7 +119,7 @@ class SimpleUpdate {
   Future<bool> checkUpdate({Platform platform, Info info}) async {
     var version = await getLatest(platform);
 
-    if (version != null && version.number > int.parse(info.buildNumber)) {
+    if (version != null && version.number > info.buildNumber) {
       _version = version;
       _info = info;
       return true;
@@ -247,5 +247,5 @@ class Info {
 
   final String version;
 
-  final String buildNumber;
+  final int buildNumber;
 }
