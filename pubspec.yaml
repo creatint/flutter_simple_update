@@ -1,0 +1,14 @@
+name: simple_update
+description: The simplest way to update app(download and install), support all platforms.
+version: 2.0.0
+homepage: https://github.com/creatint/flutter_simple_update
+
+
+environment:
+  sdk: '>=2.5.0 <3.0.0'
+
+dependencies:
+ http: ^0.12.1
+
+dev_dependencies:
+  test: ^1.14.4
