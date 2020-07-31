@@ -121,8 +121,8 @@ class SimpleUpdate {
     var version = await getLatest(platform);
 
     if (version != null && version.number > int.parse(info.buildNumber)) {
-      this._version = version;
-      this._info = info;
+      _version = version;
+      _info = info;
       return true;
     }
 
