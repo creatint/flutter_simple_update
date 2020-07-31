@@ -1,3 +1,7 @@
+## 2.0.8
+
+* Format code
+
 ## 2.0.7
 
 * Modify addDownloadCount()

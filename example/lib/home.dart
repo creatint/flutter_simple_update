@@ -79,7 +79,8 @@ class _HomeState extends State<Home> {
                                       simple.Event>.fromHandlers(
                                   handleData: (event, sink) {
                             sink.add(simple.Event(
-                                status: simple.Status.values[event.status.index],
+                                status:
+                                    simple.Status.values[event.status.index],
                                 value: event.value));
                           }));
                         });
