@@ -17,7 +17,6 @@ class SimpleUpdate {
 
   static final Map<String, SimpleUpdate> _cache = {};
 
-
   /// Get singleton instance by [key]
   ///
   /// ```dart
@@ -63,11 +62,11 @@ class SimpleUpdate {
   /// ```
   factory SimpleUpdate(
       {String key = 'default',
-        int appId,
-        String appKey,
-        String user,
-        String flag,
-        String apiPrefix = 'https://avenge.cn/api'}) {
+      int appId,
+      String appKey,
+      String user,
+      String flag,
+      String apiPrefix = 'https://avenge.cn/api'}) {
     if (_cache.containsKey(key)) {
       _cache[key]
         .._appId = appId
@@ -97,7 +96,7 @@ class SimpleUpdate {
   /// If return null, it means there's no latest version
   Future<Version> getLatest(Platform platform) async {
     var res =
-    await _client.get('$_apiPrefix/latest?app_id=$_appId&app_key=$_appKey');
+        await _client.get('$_apiPrefix/latest?app_id=$_appId&app_key=$_appKey');
 
     if (res.statusCode != 200) {
       return null;
@@ -244,7 +243,6 @@ class PackageInfo {
     this.version,
     this.buildNumber,
   });
-
 
   final String appName;
 
