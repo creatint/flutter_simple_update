@@ -2,7 +2,7 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
 
 # simple_update
 ![Pub Version](https://img.shields.io/pub/v/simple_update?style=flat-square)
-![Platform](https://img.shields.io/badge/platform-flutter%20android-brightgreen)
+![Platform](https://img.shields.io/badge/platform-flutter%7Cflutter%20web%7Cdart%20vm-brightgreen)
 
 The simplest way to update app, support all platforms.
 
@@ -24,7 +24,7 @@ You can set your own server to publish apps.
 3. Install
    ```yaml
    dependencies:
-       simple_update: ^2.0.1
+       simple_update: ^2.0.2
    ```
    
    

@@ -1,3 +1,7 @@
+## 2.0.2
+
+* Fix README.md
+
 ## 2.0.1
 
 * Fix README.md

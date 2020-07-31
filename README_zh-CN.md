@@ -25,7 +25,7 @@ APP更新的最简单方式（下载并触发安装），支持所有平台。
 3. 安装
    ```yaml
    dependencies:
-       simple_update: ^2.0.1
+       simple_update: ^2.0.2
    ```
 
 4. 用法
