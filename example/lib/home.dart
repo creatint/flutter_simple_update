@@ -41,9 +41,8 @@ class _HomeState extends State<Home> {
                 var info = await PackageInfo.fromPlatform();
                 var res = await updater.checkUpdate(
                     platform: simple.Platform.Android,
-                    info: simple.PackageInfo(
+                    info: simple.Info(
                         appName: info.appName,
-                        packageName: info.packageName,
                         version: info.version,
                         buildNumber: info.buildNumber));
                 if (res == true) {

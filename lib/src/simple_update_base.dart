@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 
 enum Platform { Android, IOS, Fuchsia, Linux, Windows, MacOS }
 
-typedef Downloader = Stream<Event> Function(PackageInfo info, Version version);
+typedef Downloader = Stream<Event> Function(Info info, Version version);
 
 class SimpleUpdate {
   String _apiPrefix;
@@ -13,7 +13,7 @@ class SimpleUpdate {
   String _appKey;
   http.Client _client;
   Version _version;
-  PackageInfo _info;
+  Info _info;
 
   static final Map<String, SimpleUpdate> _cache = {};
 
@@ -116,7 +116,7 @@ class SimpleUpdate {
   }
 
   /// Check if the app has new version
-  Future<bool> checkUpdate({Platform platform, PackageInfo info}) async {
+  Future<bool> checkUpdate({Platform platform, Info info}) async {
     var version = await getLatest(platform);
 
     if (version != null && version.number > int.parse(info.buildNumber)) {
@@ -236,17 +236,14 @@ enum Status {
   CHECKSUM_ERROR
 }
 
-class PackageInfo {
-  PackageInfo({
+class Info {
+  Info({
     this.appName,
-    this.packageName,
     this.version,
     this.buildNumber,
   });
 
   final String appName;
-
-  final String packageName;
 
   final String version;
 

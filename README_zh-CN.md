@@ -4,7 +4,7 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
 ![Pub Version](https://img.shields.io/pub/v/simple_update?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-flutter%7Cflutter%20web%7Cdart%20vm-brightgreen)
 
-APP更新的最简单方式（下载并触发安装），支持所有平台。
+最简单的APP更新方式（下载并触发安装），支持所有平台。
 
 默认情况下，会从[avenge.cn](https://avenge.cn)下载最新版本的APP，这是一个简单的APP版本管理系统，欢迎试用^_^
 
@@ -46,9 +46,8 @@ APP更新的最简单方式（下载并触发安装），支持所有平台。
         var info = await PackageInfo.fromPlatform();
         var res = await updater.checkUpdate(
             platform: simple.Platform.Android,
-            info: simple.PackageInfo(
+            info: simple.Info(
                 appName: info.appName,
-                packageName: info.packageName,
                 version: info.version,
                 buildNumber: info.buildNumber));
         if (res == true) {
