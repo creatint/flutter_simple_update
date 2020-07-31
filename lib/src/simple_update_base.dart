@@ -147,11 +147,16 @@ class SimpleUpdate {
       }
 
       try {
+        addDownloadCount();
         return downloader(_info, _version);
       } catch (e) {
         return 'Failed to make update. Details: $e';
       }
     }
+  }
+
+  void addDownloadCount() {
+    _client.get('$_apiPrefix/addDownloadCount?app_id=$_appId&app_key=$_appKey');
   }
 }
 

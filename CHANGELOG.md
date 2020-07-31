@@ -1,3 +1,7 @@
+## 2.0.6
+
+* Add addDownloadCount()
+
 ## 2.0.5
 
 * Modify the Info's API
