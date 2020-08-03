@@ -1,3 +1,7 @@
+## 2.0.9
+
+* Change the default domain of api.
+
 ## 2.0.8
 
 * Format code

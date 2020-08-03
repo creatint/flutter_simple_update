@@ -6,7 +6,7 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
 
 最简单的APP更新方式（下载并触发安装），支持所有平台。
 
-默认情况下，会从[avenge.cn](https://avenge.cn)下载最新版本的APP，这是一个简单的APP版本管理系统，欢迎试用^_^
+默认情况下，会从[avenge.app](https://avenge.app)下载最新版本的APP，这是一个简单的APP版本管理系统，欢迎试用^_^
 
 你也可以设置自己的服务器来发布APP新版本。
 
@@ -14,18 +14,18 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
 
 1. 注册账号
 
-   [https://avenge.cn/register](https://avenge.cn/register)
+   [https://avenge.app/register](https://avenge.app/register)
 2. 创建应用与版本
 
-   [https://avenge.cn/home/resources/apps/new](https://avenge.cn/home/resources/apps/new)
+   [https://avenge.app/home/resources/apps/new](https://avenge.app/home/resources/apps/new)
    
-   [https://avenge.cn/home/resources/versions/new](https://avenge.cn/home/resources/versions/new)
+   [https://avenge.app/home/resources/versions/new](https://avenge.app/home/resources/versions/new)
 
 
 3. 安装
    ```yaml
    dependencies:
-       simple_update: ^2.0.8
+       simple_update: ^2.0.9
    ```
 
 4. 用法
@@ -121,13 +121,13 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
 ## 构建版本发布服务器
 
   
-   [SimpleUpdate.apiPrefix] 的默认值是 'https://avenge.cn/api', 你可以指定自己的服务器来发布APP新版本.
+   [SimpleUpdate.apiPrefix] 的默认值是 'https://avenge.app/api', 你可以指定自己的服务器来发布APP新版本.
    ```dart
    var updater = SimpleUpdate(apiPrefix: 'your own server');
    ```
   
   当获取新版本时，会向服务器发送一个get请求，携带如下参数
-  > https://avenge.cn/api/latest?app_id=456&app_key=abc123&platform=0
+  > https://avenge.app/api/latest?app_id=456&app_key=abc123&platform=0
 
   platform参数: 0:android 1:ios 2:fuchsia 3:linux 4:windows 5:macOS
 

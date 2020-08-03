@@ -6,7 +6,7 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
 
 The simplest way to update app, support all platforms.
 
-By default, the new version would be downloaded from [avenge.cn](https://avenge.cn), which is a simple Version-Management-System, welcome to try ^_^
+By default, the new version would be downloaded from [avenge.app](https://avenge.app), which is a simple Version-Management-System, welcome to try ^_^
 
 You can set your own server to publish apps.
 
@@ -14,17 +14,17 @@ You can set your own server to publish apps.
 
 1. Register for free
 
-   [https://avenge.cn/register](https://avenge.cn/register)
+   [https://avenge.app/register](https://avenge.app/register)
 2. Create app & create version
 
-   [https://avenge.cn/home/resources/apps/new](https://avenge.cn/home/resources/apps/new)
+   [https://avenge.app/home/resources/apps/new](https://avenge.app/home/resources/apps/new)
    
-   [https://avenge.cn/home/resources/versions/new](https://avenge.cn/home/resources/versions/new)
+   [https://avenge.app/home/resources/versions/new](https://avenge.app/home/resources/versions/new)
 
 3. Install
    ```yaml
    dependencies:
-       simple_update: ^2.0.8
+       simple_update: ^2.0.9
    ```
    
    
@@ -121,13 +121,13 @@ You can set your own server to publish apps.
 ## Build publish server
 
   
-   The default value of [SimpleUpdate.apiPrefix] is 'https://avenge.cn/api', you can set your own server to publish apps.
+   The default value of [SimpleUpdate.apiPrefix] is 'https://avenge.app/api', you can set your own server to publish apps.
    ```dart
    var updater = SimpleUpdate(apiPrefix: 'your own server');
    ```
   
   When request the latest version, it should send these parameters to remote server by GET method:
-  > https://avenge.cn/api/latest?app_id=456&app_key=abc123&platform=0
+  > https://avenge.app/api/latest?app_id=456&app_key=abc123&platform=0
 
   platform: 0:android 1:ios 2:fuchsia 3:linux 4:windows 5:macOS
 

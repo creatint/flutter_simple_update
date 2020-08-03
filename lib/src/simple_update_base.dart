@@ -23,13 +23,13 @@ class SimpleUpdate {
   /// var updater = SimpleUpdater();
   /// ```
   ///
-  /// The default value of [apiPrefix] is *https://avenge.cn/api*, you can set your own server to publish apps.
+  /// The default value of [apiPrefix] is *https://avenge.app/api*, you can set your own server to publish apps.
   /// ```dart
   /// var updater = SimpleUpdate(apiPrefix: 'your own server');
   /// ```
   ///
   /// When request the latest version, it should send these parameters to remote server:
-  /// >> https://avenge.cn/api/latest?app_id=[_appId]&app_key=[_appKey]&platform=0
+  /// >> https://avenge.app/api/latest?app_id=[_appId]&app_key=[_appKey]&platform=0
   ///
   /// platform 0:android 1:ios 2:fuchsia 3:linux 4:windows 5:macOS
   ///
@@ -45,7 +45,7 @@ class SimpleUpdate {
   ///    "platform": 0,
   ///    "name": "1.0.1",
   ///    "number": 24,
-  ///    "src": "https://avenge.cn/storage/apps/2020-07/app_name_1.0.1+24.apk",
+  ///    "src": "https://avenge.app/storage/apps/2020-07/app_name_1.0.1+24.apk",
   ///    "sha256": "sha256 of file",
   ///    "created_at": "2020-07-29 12:15:46"
   ///   }
@@ -66,7 +66,7 @@ class SimpleUpdate {
       String appKey,
       String user,
       String flag,
-      String apiPrefix = 'https://avenge.cn/api'}) {
+      String apiPrefix = 'https://avenge.app/api'}) {
     if (_cache.containsKey(key)) {
       _cache[key]
         .._appId = appId

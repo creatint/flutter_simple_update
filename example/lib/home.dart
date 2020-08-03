@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
     updater = simple.SimpleUpdate(
         appId: 1,
         appKey: 'g4rehwe8fq4qe9rgh4q',
-        apiPrefix: 'http://avenge.cn/api');
+        apiPrefix: 'http://avenge.app/api');
   }
 
   @override
