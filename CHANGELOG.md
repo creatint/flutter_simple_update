@@ -1,3 +1,7 @@
+## 2.0.10
+
+* Change README.md
+
 ## 2.0.9
 
 * Change the default domain of api.

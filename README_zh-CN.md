@@ -25,12 +25,14 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
 3. 安装
    ```yaml
    dependencies:
-       simple_update: ^2.0.9
+       simple_update: ^2.0.10
    ```
 
 4. 用法
 
-   这是一个Android的例子
+   这是一个Android的例子。
+   
+   在这个例子中，你可以安装 **[ota_update](https://pub.dev/packages/ota_update)** 来更新你的App。
    
    ```dart
    import 'package:ota_update/ota_update.dart';

@@ -24,13 +24,15 @@ You can set your own server to publish apps.
 3. Install
    ```yaml
    dependencies:
-       simple_update: ^2.0.9
+       simple_update: ^2.0.10
    ```
    
    
 4. Usage
 
-   This is an example of Android.
+   This is an example of Android. 
+   
+   In this example, you can use **[ota_update](https://pub.dev/packages/ota_update)** to update your app.
    
    ```dart
    import 'package:ota_update/ota_update.dart';
