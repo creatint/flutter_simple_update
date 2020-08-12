@@ -17,14 +17,14 @@ You can set your own server to publish apps.
    [https://avenge.app/register](https://avenge.app/register)
 2. Create app & create version
 
-   [https://avenge.app/developer/resources/apps/new](https://avenge.app/developer/resources/apps/new)
+   [https://avenge.app/developer/resources/app-apps/new](https://avenge.app/developer/resources/app-apps/new)
    
-   [https://avenge.app/developer/resources/versions/new](https://avenge.app/developer/resources/versions/new)
+   [https://avenge.app/developer/resources/app-versions/new](https://avenge.app/developer/resources/app-versions/new)
 
 3. Install
    ```yaml
    dependencies:
-       simple_update: ^2.0.11
+       simple_update: ^2.0.12
    ```
    
    

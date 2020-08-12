@@ -1,3 +1,7 @@
+## 2.0.12
+
+* Change README.md and README_zh-CN.md
+
 ## 2.0.11
 
 * Change README.md and README_zh-CN.md
