@@ -17,15 +17,15 @@ Language: [English](README.md) | [中文](README_zh-CN.md)
    [https://avenge.app/register](https://avenge.app/register)
 2. 创建应用与版本
 
-   [https://avenge.app/home/resources/apps/new](https://avenge.app/home/resources/apps/new)
+   [https://avenge.app/developer/resources/apps/new](https://avenge.app/developer/resources/apps/new)
    
-   [https://avenge.app/home/resources/versions/new](https://avenge.app/home/resources/versions/new)
+   [https://avenge.app/developer/resources/versions/new](https://avenge.app/developer/resources/versions/new)
 
 
 3. 安装
    ```yaml
    dependencies:
-       simple_update: ^2.0.10
+       simple_update: ^2.0.11
    ```
 
 4. 用法
